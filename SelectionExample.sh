@@ -2,7 +2,10 @@
   
 
 var1=10
-var2=1o
+var2=10
+var3=$1
+var4=$2
+echo $var3 $var4
 if [ $var1 -ge $var2 ]
 then 
   echo  "$var1 is greater than or equal to $var2"

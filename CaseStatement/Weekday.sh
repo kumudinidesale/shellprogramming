@@ -21,7 +21,7 @@ case $num in
 	echo "Friday"
 	;;
 	7)
-	echo "Saterday"
+	echo "Saturday"
 	;;
 	*)
 	echo "Enter number only from 1 to 7"

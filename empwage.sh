@@ -1,15 +1,26 @@
 #!/bin/bash -x
-isPresent=1;
-randomCheck=$((RANDOM%2));
-
-if [$isPresent -eq $randomCheck ];
-then 
+isPartTime=1;
+isPartTime=2;
+totalSalary=0;
 empRatePerHrs=20;
-empHrs=8;
-salary=$(($empRarePerHrs*$empHrs));
-echo $salary;
-else
+numWorkingDays=5;
+ for ((day=1;day<=$numWorkingDays;day++))
+ do empCheck=$((RANDOM%3));
+ case $empCheck in 
+ $isFullTime in 
+ $isFullTime)
+ empHrs=8
+ ;;
 
-salary=0;
-echo $salary;
-fi
+ $isParentTime)
+ empHrs=4
+;;
+*)
+empHrs=0
+;;
+ esac 
+   salary=$(($empRatePerHrs*$empHrs));
+   totalSalary=$(($totalSalary+$salary));
+ done
+echo $totaSalary
+$empHrs

@@ -1,4 +1,3 @@
-#!/bin/bash -x 
 perHourSalary=20;
 workingHour=0;
 totalSalary=0;
